@@ -265,14 +265,11 @@ function validate() {
         }
     }
     if(isAllTrue){
-        console.log("Well done!");
-        
-    }
-    document.getElementById("pyro").setAttribute("class", "pyro");
-    playAudio();
-    const myTimeout = setTimeout(myStopFunction, 3000);
-    function myStopFunction() {
-        clearTimeout(myTimeout);
+        document.getElementById("pyro").setAttribute("class", "pyro");
+        playAudio();
+        const myTimeout = setTimeout(myStopFunction, 3000);
+        function myStopFunction() {
+            clearTimeout(myTimeout);
         document.getElementById("pyro").removeAttribute("class");
     }
 }
