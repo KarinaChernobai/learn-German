@@ -270,7 +270,8 @@ function validate() {
         const myTimeout = setTimeout(myStopFunction, 3000);
         function myStopFunction() {
             clearTimeout(myTimeout);
-        document.getElementById("pyro").removeAttribute("class");
+            document.getElementById("pyro").removeAttribute("class");
+        }
     }
 }
 
